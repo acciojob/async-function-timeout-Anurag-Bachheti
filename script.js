@@ -13,8 +13,6 @@ window.onload = function(){
       return;
     }
 		
-		screen.innerHTML = "Waiting!..."
-	
 		await new Promise(resolve => setTimeout(resolve, delay));
 		screen.innerHTML = text;
 	}
