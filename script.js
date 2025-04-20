@@ -1,5 +1,7 @@
 window.onload = function(){
-document.getElementById("btn").addEventListener("click", getDelayed)
+	document.getElementById("output").innerHTML = "";
+	
+	document.getElementById("btn").addEventListener("click", getDelayed)
 
 	async function getDelayed(){
 		let text = document.getElementById("text").value;
@@ -11,5 +13,5 @@ document.getElementById("btn").addEventListener("click", getDelayed)
 		await new Promise(resolve => setTimeout(resolve, delay));
 		screen.innerHTML = text;
 	}
-		document.getElementById("output").innerHTML = "";
+	
 }
